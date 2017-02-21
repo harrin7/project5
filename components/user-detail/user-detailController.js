@@ -7,6 +7,7 @@ cs142App.controller('UserDetailController', ['$scope', '$routeParams',
      * $routeParams  should have the userId property set with the path from the URL.
      */
     var userId = $routeParams.userId;
+    $scope.userDetails = window.cs142models.userModel($routeParams.userId);
     console.log('UserDetail of ', userId);
 
     console.log('window.cs142models.userModel($routeParams.userId)',
