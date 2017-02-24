@@ -30,7 +30,10 @@
 
     <body layout="column">
 
-        <md-toolbar layout = "row">
+        <md-toolbar layout = "row"  layout-align = "center center" layout-wrap>
+            <div flex="none">Patrick Harrington</div>
+            <div flex></div>
+            <div flex="nogrow">{{main.sectionHeader}} {{userDetails.first_name}}  {{main.versionModel.__v}}</div>
         </md-toolbar>
 
         <div class="container" flex layout="row">

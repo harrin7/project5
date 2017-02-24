@@ -9,8 +9,7 @@ cs142App.controller('UserDetailController', ['$scope', '$routeParams',
     var userId = $routeParams.userId;
     $scope.userDetails = window.cs142models.userModel($routeParams.userId);
     console.log('UserDetail of ', userId);
-
-    console.log('window.cs142models.userModel($routeParams.userId)',
-        window.cs142models.userModel(userId));
+    $scope.main.sectionHeader = $scope.userDetails.first_name + ' ' + $scope.userDetails.last_name;
+        
 
   }]);

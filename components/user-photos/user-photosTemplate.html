@@ -1,0 +1,12 @@
+<div ng-repeat="step in photoDetails">
+    {{step.date_time}}
+    <br/>
+    <img src="/images/{{step.file_name}}">
+    <div ng-repeat="stoop in step.comments">
+    {{stoop.date_time}}
+    <br/>
+    <a href="#users/{{stoop.user._id}}">{{stoop.user.first_name}} {{stoop.user.last_name}}:</a>
+    {{stoop.comment}} 
+    </div>
+    <br/>	
+</div>

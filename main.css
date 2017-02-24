@@ -4,3 +4,10 @@ CSS for the CS142 project #5 main page
 Since CSS uses a global name space for classes we should use class names starting with
 cs142-main- here.
 */
+
+.TitleName {
+	float:left;
+}
+.SectionHeader {
+	layout-align: 'center end';
+}
